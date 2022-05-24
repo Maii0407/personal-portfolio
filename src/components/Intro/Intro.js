@@ -4,7 +4,9 @@ import './Intro.css';
 
 const Intro = () => {
   return (
-    <div>Intro</div>
+    <div className='intro'>
+      <img/>
+    </div>
   );
 };
 
