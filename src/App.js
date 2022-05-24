@@ -1,10 +1,16 @@
 import React from 'react';
 
-import { Intro } from './components/Intro/Intro';
+import { Intro } from './components/Intro';
+import { AboutMe } from './components/AboutMe';
+import { MyWork } from './components/MyWork';
 
 const App = () => {
   return (
-    <Intro/>
+    <div>
+      <Intro/>
+      <AboutMe/>
+      <MyWork/>
+    </div>
   );
 };
 
