@@ -1,6 +1,6 @@
 import React from 'react';
 
-import picMobile from '/home/akmal-izuddin/Desktop/the-odin-project/personal-portfolio/src/image/intro photo mobile.jpg';
+import picMobile from './image/introMobile.jpg'
 
 const Intro = () => {
   const mobile = picMobile;

@@ -7,6 +7,8 @@ body {
   background-repeat: repeat-y;
   background-size: 40rem auto;
   color: white;
+
+  margin: 0;
 }
 
 p {
@@ -25,6 +27,15 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  margin: 0;
+  margin-left: 55px;
+}
+
 .content {
   background-color: rgba(255, 255, 255, 0.7);
   color: black;
@@ -32,6 +43,11 @@ h1 {
   justify-content: center;
   border-radius: 5px;
   margin: 25px;
+}
+
+img {
+  margin: 0;
+  padding: 0;
 }
 
 /* styling for Intro component */
@@ -58,6 +74,10 @@ picture {
 }
 
 /* styling for MyWork component */
+.myWork {
+  margin-bottom: 200px;
+}
+
 .myWork h1 {
   text-align: center;
   margin-top: 50px;
@@ -66,18 +86,17 @@ picture {
 .projectContainer {
   display: grid;
   grid-template-columns: repeat( 1, 1fr );
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  gap: 25px;
 }
 
 /* styling for ProjectCard component */
 .projectCard {
   background-color: rgba(255, 255, 255, 0.7);
   color: black;
-  margin: 25px;
   border-radius: 5px;
-}
-
-.projectCard h1 {
-  margin: 0;
 }
 
 .projectCard p {
@@ -88,4 +107,20 @@ picture {
   max-width: 100%;
   margin-bottom: 0;
   border-radius: 5px 5px 0 0;
+}
+
+/* styling for ContactMe component */
+.contactMe h1 {
+  text-align: center;
+}
+
+.contactMe p {
+  font-size: 2rem;
+  margin: 25px 25px;
+}
+
+.contactMe img {
+  max-width: 100%;
+  object-fit: contain;
+  margin-top: 200px;
 }

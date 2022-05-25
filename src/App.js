@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { Intro } from './components/Intro';
-import { AboutMe } from './components/AboutMe';
-import { MyWork } from './components/MyWork';
+import { Intro } from './assets/Intro';
+import { AboutMe } from './assets/AboutMe';
+import { MyWork } from './assets/MyWork';
+import { ContactMe } from './assets/ContactMe';
 
-import { data } from './components/projectAssets/projectData';
+import { data } from './assets/projectData';
 
 const App = () => {
   const { projectList } = data;
@@ -14,6 +15,7 @@ const App = () => {
       <Intro/>
       <AboutMe/>
       <MyWork array={ projectList } />
+      <ContactMe/>
     </div>
   );
 };

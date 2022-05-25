@@ -6,7 +6,7 @@ const ProjectCard = ( props ) => {
   return (
     <div className='projectCard'>
       <img src={ cardObj.projectImg } alt={ cardObj.name }/>
-      <h1>{ cardObj.name }</h1>
+      <h2>{ cardObj.name }</h2>
       <p>{ cardObj.desc }</p>
     </div>
   );

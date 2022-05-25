@@ -1,4 +1,4 @@
-import placeholderImg from '/home/akmal-izuddin/Desktop/the-odin-project/personal-portfolio/src/image/project placeholder.jpg';
+import placeholderImg from './image/project placeholder.jpg'
 
 const data = { projectList: [
   {
