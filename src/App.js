@@ -4,12 +4,16 @@ import { Intro } from './components/Intro';
 import { AboutMe } from './components/AboutMe';
 import { MyWork } from './components/MyWork';
 
+import { data } from './components/projectAssets/projectData';
+
 const App = () => {
+  const { projectList } = data;
+
   return (
     <div>
       <Intro/>
       <AboutMe/>
-      <MyWork/>
+      <MyWork array={ projectList } />
     </div>
   );
 };
