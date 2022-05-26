@@ -19,7 +19,7 @@ p {
   letter-spacing: 0.0375em;
 }
 
-h1 {
+h1, h2, h3 {
   font-family: 'Playfair Display', serif;
   font-size: 4.5rem;
   font-weight: 700;
@@ -28,11 +28,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: -0.05em;
-  margin: 0;
   margin-left: 55px;
 }
 
@@ -40,14 +36,20 @@ h2 {
   background-color: rgba(255, 255, 255, 0.7);
   color: black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   border-radius: 5px;
   margin: 25px;
 }
 
 img {
+  max-width: 100%;
   margin: 0;
   padding: 0;
+}
+
+.iconContainer img {
+  filter: brightness(0) saturate(100%);
 }
 
 /* styling for Intro component */
@@ -71,6 +73,15 @@ picture {
 .aboutMe h1 {
   text-align: center;
   margin-top: 50px;
+}
+
+.iconContainer {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat( 3, 50px);
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 /* styling for MyWork component */
@@ -104,12 +115,28 @@ picture {
 }
 
 .projectCard img {
-  max-width: 100%;
   margin-bottom: 0;
   border-radius: 5px 5px 0 0;
 }
 
+.projectCard header {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.projectCard header .iconContainer {
+  align-items: center;
+  margin: 0;
+  grid-template-columns: repeat( 3, 40px);
+}
+
 /* styling for ContactMe component */
+.contactMe {
+  display: flex;
+  flex-direction: column;
+}
 .contactMe h1 {
   text-align: center;
 }
@@ -120,7 +147,16 @@ picture {
 }
 
 .contactMe img {
-  max-width: 100%;
   object-fit: contain;
   margin-top: 200px;
+}
+
+.contactMe .iconContainer {
+  grid-template-columns: repeat( 3, 100px);
+  margin: 0;
+  margin-top: 50px;
+}
+
+.contactMe .iconContainer img {
+  margin: 0;
 }

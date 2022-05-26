@@ -1,6 +1,8 @@
 import React from 'react';
 
-const AboutMe = () => {
+const AboutMe = ( props ) => {
+  const { github, linkedIn, twitter } = props;
+
   return (
     <div className='aboutMe' >
       <h1>About Me</h1>
@@ -12,6 +14,11 @@ const AboutMe = () => {
            et lorem adipiscing sed nulla. Volutpat nisl et tempus et dolor libero, feugiat magna 
            tempus, sed et lorem adipiscing.
         </p>
+        <div className='iconContainer'>
+          <img src={ github } alt='github icon'/>
+          <img src={ linkedIn } alt='linkedIn icon'/>
+          <img src={ twitter } alt='twitter icon'/>
+        </div>
       </div>
     </div>
   );
