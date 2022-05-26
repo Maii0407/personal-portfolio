@@ -1,0 +1,63 @@
+@media ( min-width: 1200px ) {
+  br {
+    display: none;
+  }
+  .App .introSection {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    margin: 20px;
+  }
+  .App h1 {
+    max-width: 100%;
+    margin-left: 50px;
+  }
+  .App .introSection .intro img {
+    max-width: 100%;
+    align-self: center;
+    border-radius: 0;
+  }
+
+  /* desktop style for AboutMe component */
+  .aboutMe .content {
+    background-color: transparent;
+  }
+  .aboutMe {
+    max-height: 80%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0 5px 5px 0;
+  }
+  .aboutMe h1 {
+    font-size: 2.5rem;
+    color: black;
+    text-align: start;
+    text-indent: 20px;
+    margin: 0;
+    margin-top: 10px;
+  }
+  .aboutMe p {
+    margin: 0;
+  }
+  .aboutMe .iconContainer {
+    margin: 0;
+    justify-content: right;
+    margin-top: 25px;
+  }
+  .aboutMe .iconContainer img {
+    border-radius: 5px;
+  }
+  .aboutMe .iconContainer img:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* desktop style for MyWork component */
+  .myWork .projectContainer {
+    grid-template-columns: repeat( 3, 1fr );
+  }
+  .myWork h1 {
+    text-align: start;
+    margin-left: 50px;
+  }
+}

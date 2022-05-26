@@ -11,6 +11,16 @@ body {
   margin: 0;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.App .introSection {
+  display: flex;
+  flex-direction: column;
+}
+
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
@@ -52,11 +62,11 @@ img {
   filter: brightness(0) saturate(100%);
 }
 
-/* styling for Intro component */
-.intro h1 {
+.App h1 {
   margin-left: 25px;
 }
 
+/* styling for Intro component */
 picture {
   display: flex;
   justify-content: center;
@@ -123,13 +133,14 @@ picture {
   max-width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .projectCard header .iconContainer {
   align-items: center;
   margin: 0;
   grid-template-columns: repeat( 3, 40px);
+  justify-content: flex-end;
 }
 
 /* styling for ContactMe component */

@@ -19,6 +19,12 @@ const data = { projectList: [
     name: 'Project 003',
     desc: 'Short description of project. Just a couple of sentences will do.',
   },
+  {
+    id: '04',
+    projectImg: placeholderImg,
+    name: 'Project 004',
+    desc: 'Short description of project. Just a couple of sentences will do.',
+  },
 ]};
 
 export { data };

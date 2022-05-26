@@ -16,9 +16,12 @@ const App = () => {
   const { projectList } = data;
 
   return (
-    <div>
-      <Intro/>
-      <AboutMe github={ github } linkedIn={ linkedIn } twitter={ twitter }/>
+    <div className='App'>
+      <h1>Akmal <br/> Izuddin</h1>
+      <div className='introSection'>
+        <Intro/>
+        <AboutMe github={ github } linkedIn={ linkedIn } twitter={ twitter }/>
+      </div>
       <MyWork array={ projectList } github={ github } openLink={ openLink }/>
       <ContactMe github={ github } linkedIn={ linkedIn } twitter={ twitter }/>
     </div>

@@ -1,15 +1,14 @@
 import React from 'react';
 
 import picMobile from './image/introMobile.jpg'
+import picDesktop from './image/intro.jpg';
 
 const Intro = () => {
-  const mobile = picMobile;
-
   return (
     <div className='intro'>
-      <h1>Akmal <br/> Izuddin</h1>
       <picture>
-        <img src={ mobile } alt='Akmal Izuddin' />
+        <source srcSet={ picDesktop } media='( min-width: 1000px )'/>
+        <img src={ picMobile } alt='Akmal Izuddin' />
       </picture>
     </div>
   );
