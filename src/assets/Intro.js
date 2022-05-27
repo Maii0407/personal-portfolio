@@ -7,7 +7,7 @@ const Intro = () => {
   return (
     <div className='intro'>
       <picture>
-        <source srcSet={ picDesktop } media='( min-width: 1000px )'/>
+        <source srcSet={ picDesktop } media='( min-width: 1200px )'/>
         <img src={ picMobile } alt='Akmal Izuddin' />
       </picture>
     </div>
