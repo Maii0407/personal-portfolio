@@ -109,3 +109,102 @@
     margin-left: 20px;
   }
 }
+
+@media ( min-width: 770px ) {
+  br{
+    display: none;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .App .introSection {
+    flex-direction: row;
+    margin: 15px;
+  }
+
+  /* tablet style for AboutMe component */
+  .aboutMe .content {
+    background-color: transparent;
+  }
+  .aboutMe h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-align: start;
+    text-indent: 20px;
+    margin: 0;
+    margin-top: 10px;
+  }
+  .aboutMe p {
+    margin: 0;
+    color: white;
+    font-size: 20px;
+  }
+  .aboutMe .iconContainer {
+    margin: 0;
+    justify-content: right;
+    margin-top: 25px;
+  }
+  .aboutMe .iconContainer img {
+    border-radius: 5px;
+    filter: brightness(0) saturate(100%) invert(1);
+  }
+  .aboutMe .iconContainer img:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  /* tablet style for MyWork component */
+  .myWork .projectContainer {
+    grid-template-columns: repeat( 2, 1fr );
+  }
+  .myWork h1 {
+    text-align: start;
+    margin-left: 50px;
+  }
+
+  /* tablet style for ProjectCard component */
+  header {
+    align-items: center;
+    margin: 0;
+    margin-top: 20px;
+  }
+  .projectCard header .iconContainer {
+    grid-template-columns: repeat( 3, 30px);
+    gap: 15px;
+  }
+  .projectCard p {
+    margin: 0;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+  }
+
+  /* tablet style for ContactMe component */
+  .contactMe {
+    max-width: 100%;
+    flex-direction: row;
+    margin: 25px;
+    margin-bottom: 100px;
+  }
+  .contactMe picture {
+    max-width: 60%;
+  }
+  .contactMe img {
+    margin: 0;
+  }
+  .contactMe .textContainer h1 {
+    font-size: 3rem;
+    text-align: left;
+  }
+  .contactMe .textContainer p {
+    font-size: 1.5rem;
+  }
+  .contactMe .textContainer .iconContainer {
+    grid-template-columns: repeat( 3, 50px);
+    gap: 20px;
+    justify-content: start;
+    margin-left: 20px;
+  }
+}
