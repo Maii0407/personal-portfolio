@@ -110,7 +110,7 @@
   }
 }
 
-@media ( min-width: 770px, max-width: 1199px ) {
+@media ( min-width: 770px ) and ( max-width: 1199px ) {
   br{
     display: none;
   }
